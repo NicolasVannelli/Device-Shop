@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Shop Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <h3>3 ITEMS</h3>
+    </header>
+    <main>
+        <section>
+            <div class="card">
+                <figure>
+                    <img src="./resources/Gold.png" alt="">
+                </figure>
+                <div class="card-content">
+                    <div class="qsyo">
+                        <h3>iPhone 12 Pro</h3>
+                        <p>Golden</p>
+                    </div>
+                    <p>x 1</p>
+                </div>
+                <div class="card-price">
+                    <p>$999.00</p>
+                    <button class="remove-button">×</button>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="./resources/Apple-watch.png" alt="Apple-watch">
+                </figure>
+                <div class="card-content">
+                    <div class="qsyo">
+                        <h3>Apple Watch</h3>
+                        <p>Blue</p>
+                    </div>
+                    <p>x 1</p>
+                </div>
+                <div class="card-price">
+                    <p>$399.00</p>
+                    <button class="remove-button">×</button>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="./resources/iMac.png" alt="">
+                </figure>
+                <div class="card-content">
+                    <div class="qsyo">
+                        <h3>iMac</h3>
+                        <p>Green</p>
+                    </div>
+                    <p>x 1</p>
+                </div>
+                <div class="card-price">
+                    <p>$1199.00</p>
+                    <button class="remove-button">×</button>
+                </div>
+            </div>
+            <div class="final-price">
+                <div>
+                    <textarea name="cupon" id="cupon" placeholder="Enter coupon code"></textarea>
+                    <button>Apply Coupon</button>
+                </div>
+                <div class="nose">
+                    <div class="description">
+                        <h2>Sub total</h2>
+                        <h2>Tax</h2>
+                        <h2>Total</h2>
+                    </div>
+                    <div class="prices">
+                        <h2>$2587,00</h2>
+                        <h2>$623.28</h2>
+                        <h2>$3220.28</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <form>
+            <h2>Contact Information</h2>
+            <label for="name" class="name">First & Last name</label>
+            <input type="text" name="name" placeholder="Enter first & last name" id="name">
+            <label for="email" class="email">Email Address</label>
+            <input type="email" name="email" placeholder="Enter email address" id="email">
+            <label for="country" class="country">Country</label>
+            <select name="country" id="country">
+                <option value="Finland">Finland</option>
+                <option value="EEUU">United States</option>
+                <option value="Can">Canada</option>
+            </select>
+            <label for="postal" class="postal">Postal Code</label>
+            <input type="number" name="postal" placeholder="00270" id="postal">
+            <input type="submit" value="Continue" id="submit">
+        </form>
+    </main>
+</body>
+
+</html>
